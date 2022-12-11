@@ -7,7 +7,7 @@ second background color => #29333d => input color, options background color
 text color => #fff => input text, options text color
 second color => #434860 => header color, h4 color
 
-charset code => https://net-comber.com/charset.html
+character code table => https://net-comber.com/charset.html
 <code>
 const getLowCharacter = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
