@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+*, 
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryclr: #101418;
+    --secondaryclr: #29333d;
+    --mainclr: #7cffc4;
+    --textclr: #fff;
+    --terciaryclr: #434860;
+
+    --textsize: 2rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input, 
+textarea, 
+select, 
+button{
+    font: inherit;
+}
+
+h1{
+    color: var(--terciaryclr);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+section{
+    color: var(--textclr);
+}
+
+.icon{
+    background: transparent;
+    position: absolute;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primaryclr);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password-container{
+    position: relative;
+    padding: 1.5rem;
+    margin: 3rem;
+    background-color: var(--secondaryclr);
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .password{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    color: var(--textclr);
+}
+
+.password-container i{
+    color: var(--mainclr);
+    font-size: 2.1rem;
+    transition: .3s ease;
+}
+
+.password-container i:hover{
+    color: var(--textclr);
+}
+
+fieldset{
+    background-color: var(--secondaryclr);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 2.5rem;
+}
+
+input[type=number]{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: var(--textsize);
+}
+
+input[type=number]:focus,
+input[type=number]:active{
+    background: var(--mainclr);
+}
+
+.options-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.options-container label{
+    font-size: var(--textsize);
+}
+
+#btn{
+    display: inline-block;
+    padding: 1rem;
+    border: none;
+    background: var(--mainclr);
+    font-size: var(--textsize);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#btn:hover,
+#btn:focus, #btn:active{
+    background-color: var(--textclr);
+}
+
+span{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+span a{
+    text-decoration: none;
+    color: var(--mainclr);
+    padding-left: 0.5rem;
+    transition: .3s ease;
+}
+
+span a:hover{
+    text-decoration: underline;
+}

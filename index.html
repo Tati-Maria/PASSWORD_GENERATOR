@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/abffcc366b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <section class="container" aria-label="Container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <h2 id="password" class="password"></h2>
+            <button class="icon">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <fieldset>
+            <div class="options">
+                <div class="options-container">
+                    <input type="number" name="length" id="length" min="8" max="20">
+                    <label for="length">Characters Length</label>
+                </div>
+                <div class="options-container">
+                    <input type="checkbox" name="uppercase" id="uppercase" />
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="options-container">
+                    <input type="checkbox" name="lowercase" id="lowercase" />
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="options-container">
+                    <input type="checkbox" name="numbers" id="numbers" />
+                    <label for="numbers">Include Number</label>
+                </div>
+                <div class="options-container">
+                    <input type="checkbox" name="symbol" id="symbol" />
+                    <label for="symbol">Include Symbols</label>
+                </div>
+            </div>
+            <button id="btn" type="button">Generate password</button>
+        </fieldset>
+        <span>Made By &copy;<a href=""> Tati</a></span>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
